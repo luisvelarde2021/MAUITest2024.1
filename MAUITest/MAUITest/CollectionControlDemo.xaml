@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUITest.CollectionControlDemo"
+             Title="Demo de controles de coleccion">
+    <VerticalStackLayout>
+        <!--<CarouselView>
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Canada</x:String>
+                    <x:String>USA</x:String>
+                    <x:String>Mexico</x:String>
+                    <x:String>Guatemala</x:String>
+                    <x:String>Belice</x:String>
+                    <x:String>Costa Rica</x:String>
+                </x:Array>
+            </CarouselView.ItemsSource>
+
+            <CarouselView.ItemTemplate>
+
+                <DataTemplate>
+                    <VerticalStackLayout
+                        Margin="10">
+                        <Frame
+                        BackgroundColor="Silver"
+                        Padding="10"
+                        Margin="10"
+                        HeightRequest="80"
+                        WidthRequest="200"
+                        VerticalOptions="Center"
+                        >
+                            <Label 
+                            Text="{Binding .}" 
+                            TextColor="Purple"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            />
+                        </Frame>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>-->
+
+        <!--<ListView 
+            HasUnevenRows="True"
+            SeparatorVisibility="None"
+            >
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Canada</x:String>
+                    <x:String>USA</x:String>
+                    <x:String>Mexico</x:String>
+                    <x:String>Guatemala</x:String>
+                    <x:String>Belice</x:String>
+                    <x:String>Costa Rica</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout
+                            Margin="10">
+                            <Frame
+                                BackgroundColor="Silver"
+                                Padding="10"
+                                Margin="10"
+                                HeightRequest="80"
+                                WidthRequest="200"
+                                VerticalOptions="Center"
+                >
+                                <Label 
+                                Text="{Binding .}" 
+                                TextColor="Purple"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                />  
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+
+        <Picker>
+            <Picker.ItemsSource>
+          <x:Array Type="{x:Type x:String}">
+              <x:String>Canada</x:String>
+              <x:String>USA</x:String>
+              <x:String>Mexico</x:String>
+              <x:String>Guatemala</x:String>
+              <x:String>Belice</x:String>
+              <x:String>Costa Rica</x:String>
+            <x:String>Inglaterra</x:String>
+            <x:String>Escocia</x:String>
+            <x:String>Irlanda</x:String>
+            <x:String>Belgica</x:String>
+            <x:String>Holanda</x:String>
+            <x:String>Francia</x:String>
+            <x:String>España</x:String>
+            <x:String>Italia</x:String>
+            <x:String>Alemania</x:String>
+            <x:String>Austria</x:String>
+                    <x:String>Suiza</x:String>
+                    <x:String>Suecia</x:String>
+                </x:Array>
+      </Picker.ItemsSource>
+
+     
+  </Picker>
+    </VerticalStackLayout>
+</ContentPage>

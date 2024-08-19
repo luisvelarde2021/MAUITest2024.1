@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUITest.InputControlsDemo"
+             Title="Input Controls Demo">
+    <VerticalStackLayout
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        >
+        <HorizontalStackLayout>
+            <Label 
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="16"
+                Text="Es estudiante?"/>
+            <CheckBox/>
+            
+        </HorizontalStackLayout>
+        <Slider
+            x:Name="slider"
+            Minimum="0"
+            Maximum="100"
+            WidthRequest="300"
+            MinimumTrackColor="Green"
+            MaximumTrackColor="Purple"
+            ValueChanged="slider_ValueChanged"
+            />
+        <Label
+            x:Name="labelslider" 
+            FontAttributes="Bold"
+            FontSize="16"
+               />
+        <Stepper
+            x:Name="stepper"
+            Minimum="0"
+            Maximum="10"
+            Increment="2"
+            ValueChanged="stepper_ValueChanged"
+            />
+        <HorizontalStackLayout>
+            <Label 
+         VerticalOptions="Center"
+         FontAttributes="Bold"
+         FontSize="16"
+         Text="Es maestro?"/>
+            <Switch IsToggled="True"/>
+
+        </HorizontalStackLayout>
+        <DatePicker/>
+        <TimePicker/>
+        
+    </VerticalStackLayout>
+</ContentPage>
